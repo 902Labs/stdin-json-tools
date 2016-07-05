@@ -1,0 +1,24 @@
+{
+  "name": "stdin-json-tools",
+  "version": "0.2.1",
+  "description": "Read JSON from stdin and do stuff with it",
+  "main": "index.js",
+  "bin": {
+    "json-value": "./bin/stdin-json-value",
+    "json-each": "./bin/stdin-json-each"
+  },
+  "scripts": {
+    "test1": "echo \"{\\\"hello\\\": \\\"Hello World\\\"}\" | node value.js hello",
+    "test2": "echo \"{\\\"hello1\\\": \\\"Hello World\\\", \\\"hello2\\\": \\\"Hello World Aagain\\\"}\" | node each.js"
+  },
+  "keywords": [
+    "stdin",
+    "JSON"
+  ],
+  "author": "Russell Brown <902labs>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "safe-json-obj-parse": "^0.2.0"
+  }
+}
